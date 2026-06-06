@@ -78,16 +78,14 @@ font-size: 35px;
 .industry a { color: #1166cc; text-decoration: none;}
 .industry a:hover {text-decoration: underline;}
 
-.proj img,
-.aff img,
-.chart img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 100%;
-max-width: 640px;
-height: auto;
-border-radius: 25px;
-box-shadow: 0 30px 30px rgba(0, 0, 0, 0.06);
-object-fit: cover;
+.about,
+.industry,
+.career,
+.effect {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.15);
 }
