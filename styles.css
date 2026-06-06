@@ -132,3 +132,5 @@ max-width: 100%;
 @media (max-width: 720px) {
 body { padding: 18px 10px;}
 h1 {font-size: 28px; margin-top: 6px;}
+.proj img, .aff img, .chart, img {max-width: 100%;}
+}
