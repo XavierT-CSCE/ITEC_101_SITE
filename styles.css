@@ -67,8 +67,8 @@ h1 {
 }
 
 hr {
-    border: none;
-    height: 1px;
+    border:#4d2c24; 
+    height: 4px;
     background: #333;
     margin: 12px 0;
 }
@@ -77,8 +77,6 @@ hr {
     max-width: 920px;
     width: 100%;
 }
-
-/* Section Boxes */
 
 .about,
 .industry,
@@ -93,8 +91,6 @@ hr {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Headings */
-
 .about h2,
 .industry h2,
 .career h2,
@@ -102,19 +98,18 @@ hr {
     margin-bottom: 10px;
     color: #4d2c24;
     font-size: 35px;
+    text-align: center;
 }
-
-/* Paragraphs */
 
 .about p,
 .industry p,
 .career p,
 .effect p {
-    color: #333;
+    color: #000000;
     line-height: 1.5;
+    text-align: center;
+    font-size: large;
 }
-
-/* Images */
 
 img {
     display: block;
