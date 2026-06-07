@@ -1,91 +1,130 @@
-/*I learned how to make the following code by using Leanne R's Tutorial on youtube.*/
+/* I learned how to make the following code by using Leanne R's Tutorial on YouTube. */
+
 :root {
---mint-cream: #f0f7ee;
---pale-sky: #c4d7f2;
---frosted-blue: #afdedc;
---ash-grey: #91a8a4;
---dim-grey: #776871;
+    --cream: #fff8f0;
+    --peach: #ffd6ba;
+    --apricot: #fcbf8f;
+    --terracotta: #d98c5f;
+    --cocoa: #7a5c58;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html,body { height: 100%; }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
 
 body {
-background-color: var(--mint-cream);
-background-image: radial-gradient(
-var(--mint-cream),
-var(--pale-sky),
-var(--frosted-blue),
-var(--ash-grey),
-var(--dim-grey)
-);
+    background-color: var(--cream);
+    background-image: radial-gradient(
+        var(--cream),
+        var(--peach),
+        var(--apricot),
+        var(--terracotta),
+        var(--cocoa)
+    );
 
-min-height: 100vh;
-background-size: 500% 500%;
-animation: move 5s alternate infinite;
+    min-height: 100vh;
+    background-size: 500% 500%;
+    animation: move 8s alternate infinite;
 
-font-family: Arial, Helvetica, sans-serif;
-padding: 28px 16px;
-display: flex;
-flex-direction: column;
-align-items: center;
-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 28px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #000;
 }
 
 @keyframes move {
-from {
-background-position: 0%
-}
-to {
-background-position: 100% 100%
-}
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
 }
 
 h1 {
-font-size: 60px;
-font-weight: 700;
-text-align: center;
-margin-bottom: 60px;
-color: #000;
-max-width: #fff;
-background: #fff;
-border-radius: 25px;
-padding: 20px;
-box-shadow: 0 16px 16px 16px rgba(0, 0, 0, 0.50)
-}
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
 
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 20px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
 
 hr {
-border:rgba(0, 0, 0, 0.06);
-height: 1px;
-background: #000000;
-margin: 12px 0;
-text-align: center;
+    border: none;
+    height: 1px;
+    background: #333;
+    margin: 12px 0;
 }
 
-.container {max-width: 920px; width: 100%;}
-
-.about h2, .industry h2, .proj h3, .aff h3, .chart h3, .pastProjects h2 {
-margin-bottom: 10px;
-color: #222;
-font-size: 35px;
+.container {
+    max-width: 920px;
+    width: 100%;
 }
 
-.about {text-align: center;}
-.about p {color: #333; line-height: 1.45; }
-
-.industry span { color: #333; font-size: 14px;}
-.industry a { color: #1166cc; text-decoration: none;}
-.industry a:hover {text-decoration: underline;}
+/* Section Boxes */
 
 .about,
 .industry,
 .career,
 .effect {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(8px);
+    background: rgba(255, 248, 240, 0.95);
+
     border-radius: 25px;
     padding: 25px;
     margin-bottom: 25px;
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.15);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+
+.about h2,
+.industry h2,
+.career h2,
+.effect h2 {
+    margin-bottom: 10px;
+    color: #4d2c24;
+    font-size: 35px;
+}
+
+/* Paragraphs */
+
+.about p,
+.industry p,
+.career p,
+.effect p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Images */
+
+img {
+    display: block;
+    margin: 15px auto;
+
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
